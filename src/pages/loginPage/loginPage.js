@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import userManager from '../../model/UserManager';
 import AlertForm from '../../components/Alerts'
 
-export default function LoginPage({ type, setLoggedUser }) {
+export default function LoginPage({ setType, type, setLoggedUser }) {
 
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
@@ -34,8 +34,23 @@ export default function LoginPage({ type, setLoggedUser }) {
       setErrorMessage("Passwords do not match");
       return;
     }
-    userManager.register({ username: userName, password });
-    console.log(userName)
+    userManager.register({ username: userName, password }).then(res => {
+      if (res) {
+        setType("Login")
+      } else {
+        setErrorMessage("Username already exist");
+      }
+
+    })
+      .catch(err => {
+
+        console.log(err)
+      })
+      
+     
+   
+    
+    
 
 
 

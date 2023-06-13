@@ -33,7 +33,7 @@ function App() {
         <Route path="/" element={loggedUser ? <Navigate to="/todo" /> : <Navigate to="/letsstart" />} />
         <Route
           path="/letsstart"
-          element={loggedUser ? <Navigate to="/todo" /> : <LoginPage setLoggedUser={setLoggedUser} setSuccess={handleSuccess} type={type} />}
+          element={loggedUser ? <Navigate to="/todo" /> : <LoginPage setType={setType} setLoggedUser={setLoggedUser} setSuccess={handleSuccess} type={type} />}
         />
         <Route path="/todo" element={loggedUser ? <ToDoPage /> : <Navigate to="/letsstart" />} />
         <Route path="*" element={<ErrorPage />} />
