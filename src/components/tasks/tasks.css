@@ -229,12 +229,24 @@ textarea {
   span{
     margin-right: 10px;
     font-family: mediumApp;
-    display: inline-block;
-    width: 100px; /* Adjust the width as needed */
-    white-space: nowrap;
-    overflow: hidden;
+     overflow: hidden;
+         white-space: nowrap;
+         width: 100px;
+         display: inline-block;
     text-overflow: ellipsis;
+    
+    
+
   }
+  .span{
+    margin-right: 10px;
+    font-family: mediumApp;
+    display: inline-block;
+    width: 830px;
+    white-space: break-spaces;
+    word-wrap: break-word;
+  }
+  
   .list{
     display: flex!important;
     justify-content: space-between

@@ -137,7 +137,7 @@ function Tasks({ type }) {
                                     >
                                         <div>
                                             <span>Title:</span>
-                                            <span>{item.title}</span>
+                                            <span className='cutted'>{item.title}</span>
                                         </div>
                                         <div>
                                             <span>Description:</span>

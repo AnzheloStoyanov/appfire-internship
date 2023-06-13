@@ -134,7 +134,7 @@ function ChosenTask({ type, chosenTask }) {
                     <div key={comment.id} className="comment" >
                         <div>
                             <span className='time'>{comment.date}</span>
-                            <span>  {comment.text}</span>
+                            <span className='span'>  {comment.text}</span>
                         </div>
                         <button className='delete-btn button-comment' onClick={() => handleDeleteComment(comment.id)}  >
                             <div className="outer-coment">
@@ -149,7 +149,7 @@ function ChosenTask({ type, chosenTask }) {
 
             <form onSubmit={handleFormSubmit} disabled={isDisabled}>
                 <textarea placeholder='Type your comment' name="comment" disabled={isDisabled} />
-                <input className="submit-button" type="submit" disabled={isDisabled} />
+                <input value={"Add comment"} className="submit-button" type="submit" disabled={isDisabled} />
             </form>
         </>
     );
