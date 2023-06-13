@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'normalApp';
+    src: url(../memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2);
+  }
+
+.dashboard-container {
+    width: 300px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    border-width: 0 2px 0 0;
+    border-style: solid ;
+    border-color: #2021244e;
+  }
+  
+  
+  
+  .dashboard-header h1 {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .dashboard-menu {
+    padding: 16px;
+  }
+  
+  .dashboard-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dashboard-menu li {
+    padding: 8px 0;
+    cursor: pointer;
+    font-family: normalApp;
+  }
+  
+ 
+  
+ 
+  
+ 
+  .fav-icon{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.today-icon{
+    color: #246fe0;
+}
+.upcoming-icon{
+    color: #75ab70;
+}
+.filters-icon{
+    color: #e168cf;
+}

@@ -1,0 +1,116 @@
+
+@font-face {
+    font-family: 'mediumApp';
+    src: url(../6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu\ \(1\).woff2);
+  }
+  
+@font-face {
+    font-family: 'normalApp';
+    src: url(../memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2);
+  }
+.home-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+  }
+ 
+  
+  .phone {
+   border-radius: 35px;
+    width: 95%;
+    height: 95%;
+    background-image: url("../handHold.png");
+    background-size:cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .phone-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 675px;
+  }
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form>h3{
+    font-family: mediumApp;
+    font-size: 38px;
+    margin-bottom: 13px;
+  }
+  form>p{
+    color: #464545e0;
+    font-family: normalApp;
+    margin-bottom: 12px;
+  }
+  .logingForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  form>input{
+    width: 60%;
+    height: 40px;
+    background-color: white;
+    border-width: 0 0 2px 0;
+    font-family: mediumApp;
+    font-size: 16px;
+    border-color: #4645457b;
+    
+  }
+  form>input::placeholder{
+    font-family: normalApp;
+
+  }
+ form> input:focus {
+    outline: none;
+    border-width: 0 0 2px 0;
+    border-color: black;
+}
+ 
+.buttonZ {
+    font-family: mediumApp;
+    margin-top: 40px;
+    width: 60%;
+    font-size: 18px;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    height: 58px;
+    
+  }
+  .buttonZ:hover {
+    background-image: linear-gradient(225deg,#090a0a,#151717,#e54074,#f96c2c);
+      background-position: 100% 0 ;
+      background-size: 300% 100%;
+      transition: all .9s ease-in-out;
+  }
+  
+ 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.alert{
+    height: 90px;
+    position: relative;
+    width: 450px;
+}
+.message{
+    position: absolute;
+    top: 0;
+}
