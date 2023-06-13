@@ -152,22 +152,6 @@ class User {
         }
       }
       
-    //   class MockStorage {
-    //     storage = {};
-      
-    //     getItem(key) {
-    //       return this.storage[key] || null;
-    //     }
-      
-    //     setItem(key, value) {
-    //       this.storage[key] = value;
-    //     }
-      
-    //     removeItem(key) {
-    //       delete this.storage[key];
-    //     }
-    //   }
-      
       class TaskManager {
         constructor() {
           this.storage = new MockStorage();
