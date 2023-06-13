@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "node -r esm test.mjs",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,5 +43,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "assert": "^2.0.0",
+    "babel-jest": "^29.5.0",
+    "esm": "^3.2.25"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -1,15 +1,12 @@
-import { useState } from 'react';
 import './task-form.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlag } from '@fortawesome/free-solid-svg-icons';
 
-export default function TaskForm({date,handleDateChange ,setInputWhen, setBahur,handleSubmit, handleChange,inputValue, setInputValue, inputTitle,setInputTitle ,inputPriority}){
-    const [items, setItems] = useState([
-        JSON.parse(localStorage.getItem("token"))?JSON.parse(localStorage.getItem("token")):''
-    ]);
-    const currentDate = new Date().toISOString().split('T')[0]; 
+export default function TaskForm({ date, handleDateChange, setBahur, handleSubmit, handleChange, inputValue, setInputValue, inputTitle, setInputTitle, inputPriority }) {
 
-    
+    const currentDate = new Date().toISOString().split('T')[0];
+
+
     return (
         <form className='task-form' onSubmit={handleSubmit} style={{ width: '50%' }}>
 
@@ -61,8 +58,6 @@ export default function TaskForm({date,handleDateChange ,setInputWhen, setBahur,
                         onChange={handleChange} />
                     <label htmlFor="success">Lower </label><FontAwesomeIcon style={{ color: '#A3CFBB' }} icon={faFlag} />
                 </div>
-
-
                 <div>
                     <input type="radio" id="light" name="light" value="light"
                         checked={inputPriority === 'light'}
@@ -84,8 +79,6 @@ export default function TaskForm({date,handleDateChange ,setInputWhen, setBahur,
 
                 />
             </div>
-
-
             <input id='submit-task-btn' className='button' type="submit" value="Add" />
         </form>
     )

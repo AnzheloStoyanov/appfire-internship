@@ -1,17 +1,17 @@
-import Dashboard from "../../leftSideDashBoard/LeftSide"
+import Dashboard from "../../components/leftSideDashBoard/LeftSide"
 import { useState } from 'react'
 import React from "react"
 import "./to-do-list.css"
-import StyleActionsExample from "../../components/tasks/Tasks"
-export default function ToDoPage(){
+import Tasks from "../../components/tasks/Tasks"
 
-    const [type, setType] =useState('Upcoming')
-    
+export default function ToDoPage() {
 
-    return(
+    const [type, setType] = useState('Upcoming')
+
+    return (
         <div className="todo">
-            <Dashboard setType={setType}/>
-           <StyleActionsExample type={type}/>
+            <Dashboard setType={setType} />
+            <Tasks type={type} />
         </div>
     )
 }
